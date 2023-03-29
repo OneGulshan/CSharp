@@ -1,0 +1,43 @@
+(11)STATEMENTS, EXPRESSIONS AND OPERATORS IN C-SHARP
+Statement is set of tasks that perform to achieve the overall functionality of a program.
+- C# program contains multiple statements grouped in a blocks.
+- Statement can consist of : Data types, Variables, Operators, constants, Literals. Keywords, Escape sequence etc
+- Statements are classified into seven categories :- Selection, Iteration, Jump, Execution Handling Statements etc
+
+expression vs statement in c#?
+Expressions can be assigned or used as operands, while statements can only be declared.
+Example:- simpleInterest = principal * time * rate/100; <- statment(simpleInterest = principal * time * rate/100;), principal(oprands(principal)) with Expression(principal * time * rate/100)
+
+Operators:- Like Arithmatic, Relational, Logical, Bitwise, Conditional, Increment and Decrement Operators
+Operators Categories into 3 Categories :- Unary, Binary, Ternary Operators
+Unary Operators are worked with single operand
+
+(62)What is the difference between reference variable and object of class in C#?
+A reference type variable contains a reference to data stored in memory, also known as the heap. The heap is most often used for data that has a longer life. You can have more than one variable point to the same referenced data. Objects are an example of a reference type.
+
+Compile Time vs runtime:- Compile time means error deduct in program on code writting time, runtime means error deduct after program execution
+
+class member initialization time why required constructor in C#?
+What is the need for initialization of object using constructor?
+A class object with a constructor must be explicitly initialized or have a default constructor. Except for aggregate initialization, explicit initialization using a constructor is the only way to initialize non-static constant and reference class members
+
+//Make tasks more and more for making concepts and clear concepts by sparsh sir
+//C# All Classes is derived from object class so, C# Called Object Orriented Progremming
+//googleauthenticator is an timer authenticator learned by technical keeda
+
+Be focus on Practicle only
+---------------------------
+
+Don't read only statements, write code and debug more means not read uppar-uppar se
+Once practicle understand then theory easily to understandable automatically in C# or any programming language/topic etc.
+
+//infinite scroll C#, lazy loading in c# <- for increasing perticular quantity of items on every mouse scrolling
+//Infinite Scroll Image Gallery Using React and Unsplash
+//https://www.google.com/search?q=infinite+scroll+on+photos+in+react+js&sxsrf=AJOqlzWvEwtvk7pu10s66xX-Zmp-8dhIYA%3A1678792164106&ei=5FUQZJmSBq-RseMP5-yi2AU&ved=0ahUKEwiZlN-UpNv9AhWvSGwGHWe2CFsQ4dUDCA8&uact=5&oq=infinite+scroll+on+photos+in+react+js&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIFCAAQogQyBQgAEKIEMgUIABCiBDoKCAAQRxDWBBCwAzoKCCEQoAEQwwQQCkoECEEYAFCeEFiGJGDNL2gDcAF4AIABtwGIAYAJkgEDMC43mAEAoAEByAEIwAEB&sclient=gws-wiz-serp#fpstate=ive&vld=cid:dc86e0b5,vid:uFuOPlOk0sQ
+//multiple thread and multiple thread with join, Achieve parallelism in IO(write on multiple files on same time) using multiple threads in C#
+
+C# InterView Questions
+-----------------------
+Swapping Of Two Numbers Without Using Third Variable In C#
+
+//C# Entity framework is an Object Relational Mapping (ORM) framework that gives developers an automated way to store and access databases. The Entity Framework allows developers to work with data at a higher level of abstraction.

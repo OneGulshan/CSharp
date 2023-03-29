@@ -1,0 +1,31 @@
+﻿Important Points About Delegates:- 
+These are the type-safe pointer of any method. -> means Type Safety
+For instance, C# prevents you from interacting with a string type as though it 
+were an integer type. More specifically, C# supports static typing, meaning that
+the language enforces type safety at compile time.
+
+The memory slot for a variable is stored on either the stack or the heap.
+It depends on the context in which it is declared: Each local variable
+(i.e. one declared in a method) is stored on the stack.
+
+what is the difference between arguments and parameters in C#
+A parameter is the variable listed inside the parentheses in the function definition.
+An argument is the actual value that is sent to the function when it is called.
+Example -: var sum = add(2, 3); , var sum <- parameter, add(2, 3) <- argument
+
+The market value is the value of a company according to the financial markets.
+The market value of a company is calculated by multiplying the current stock price
+by the number of outstanding shares that are trading in the market.
+
+Is market value per share the same as share price?
+The market price per share of stock, or the "share price," is the most recent price
+that a stock has traded for. It's a function of market forces, occurring when the price
+a buyer is willing to pay for a stock meets the price a seller is willing to accept for
+a stock.
+
+Swing Trading
+A trading technique, generally associated with technica analysis, in with the trader
+seeks to profit from short-term price swings.
+
+//use brain breaks to restore focus how to do it
+//two types of parameter in same method with return type.
