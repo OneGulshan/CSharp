@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -108,6 +108,83 @@ namespace OOPS.Techstudy.org
                 Console.Write(" " + Convert.ToChar(asciiValue));
                 i++;
             }
+            Console.WriteLine();
+            //----------------------------------
+            ////11.C# Program to Calculate Area of Circle
+            //Console.WriteLine("Enter radius of a Circle..");
+            //double radius = double.Parse(Console.ReadLine());
+            //double Area = 3.14159265359 * radius * radius;
+            //Console.WriteLine("Area of Circle is: {0}", Area);
+
+            //----------------------------------
+            ////12.C# Program to Calculate Area of Square
+            //Console.WriteLine("Enter Side of a Square..");
+            //double side = double.Parse(Console.ReadLine());
+            //double Area = side * side;
+            //Console.WriteLine("Area of a Square is: " + Area);
+
+            //----------------------------------
+            ////13.C# Program to Calculate Area of Rectangle
+            //Console.WriteLine("Enter Length of a Rectangle..");
+            //double length = double.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter Width of a Rectangle..");
+            //double width = double.Parse(Console.ReadLine());
+            //double Area = length * width;
+            //Console.WriteLine("Area of a Rectangle is: " + Area);
+
+            //----------------------------------
+            ////14.C# Program to convert days to years, weeks and days
+            //int days, years, weeks;
+            //Console.WriteLine("Enter days:");
+            //days = Convert.ToInt32(Console.ReadLine());
+
+            //years = (days / 365);
+            //weeks = (days % 365) / 7;
+            //days = days - ((years * 365) + (weeks * 7));
+
+            //Console.WriteLine("Years : " + years);
+            //Console.WriteLine("weeks : " + weeks);
+            //Console.WriteLine("Days : " + days);
+
+
+            //List of all conditional programs in c# language
+            ////1.C# Program to check whether an integer entered by the user is odd or even
+            //Console.WriteLine("Enter a Number..");
+            //int num = int.Parse(Console.ReadLine());
+            //if (num % 2 == 0)
+            //{
+            //    Console.WriteLine("Its an Even Number");
+            //}
+            //else{
+            //    Console.WriteLine("Its an Odd Number");
+            //}
+
+            //----------------------------------
+            //2.C# Program to find the largest number among three number.
+            Console.WriteLine("Enter First Number..");
+            int n1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter Second Number..");
+            int n2 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter Third Number..");
+            int n3 = int.Parse(Console.ReadLine());
+
+            if (n1 > n2)
+            {
+                if (n1 > n3)
+                {
+                    Console.WriteLine("The 1st Number is greatest among three");
+                }
+                else
+                {
+                    Console.WriteLine("The 3rd Number is greatest among three");
+                }
+            }
+            else if (n2 > n3)//Jab  phele no. bada ni tha to sirf no. 3 se chk kara liye 1 and 2 dono no. bade nahi the to bydefault no. 3 hi greater hoga
+                Console.WriteLine("The 2nd Number is greatest among three");
+            else
+                Console.WriteLine("The 3rd Number is greatest among three");
+            //----------------------------------
+            //3.C# Program to Find the Largest Number using Conditional Operator.
 
             Console.ReadKey();
         }
