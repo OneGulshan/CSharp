@@ -1535,6 +1535,81 @@ namespace CSharp
             Console.WriteLine(ClassParams.Adds(array));
             Console.WriteLine(ClassParams.Add(10, 19, 18, 13));
 
+            ////(107)DIFFERENCE BETWEEN STRING AND STRING BUILDER IN C#
+            ////The only difference is, the String is immutable and StringBuilder is mutable. <- means string cannot be changed once created. but StringBuilder can. boths are reference type. for string drawbacks overcoming use StringBuilder class.
+            ////Note :- When you have to do few modifications or append, string is preferred.
+            ////But when you have to do more than 3 or 4 modifications or append then StringBuilder is preferred instead of string.
+            ////string is slower than StringBuilder.
+            ////StringBuilder is a Class which has multiple methods. these methods cover in next video.
+
+            //string s1 = "Gulshan";
+            //Stopwatch sw1 = new Stopwatch();//Stopwatch for time calculating, how much time taken by a perticular task execution of C# like string or StringBuilder, we can know time in any medium like seconds, miliseconds etc.
+            //sw1.Start();
+            //for (int jj = 0; jj < 100000; jj++ )
+            //{
+            //    s1 = s1 + jj;//hear created one lakh copys in heap memory
+            //}
+            //sw1.Stop();
+
+            //StringBuilder sb = new StringBuilder("Hello");
+            //Stopwatch sw2 = new Stopwatch();
+            //sw2.Start();
+            //for (int jj = 0; jj < 100; jj++)
+            //{
+            //    sb.Append(jj);//Append means jodna(concatinate)//here one lakh modifications in same heap memory, jo ki only one hogi
+            //}
+            //sw2.Stop();
+
+            //Console.WriteLine("Time Taken By String: " + sw1.ElapsedMilliseconds);//String takes 39 seconds
+            //Console.WriteLine("Time Taken By StringBuilder: " + sw2.ElapsedMilliseconds);//StringBuilder takes 0 second
+
+            //(108)STRING BUILDER IN C#
+            //StringBuilder is a dynamic class, by default its dynamic size is 16, but you can set dynamic size according to user, after reaching user size SringBuilder automatically increase its size dynamically.
+            //Append method for concatinating string in default StringBuilder object's string
+            //AppendLine method for after apending string moving curser on next line
+            //AppendFormat method for string formating before append, C(Currency), N(Amount), X(Hexadecimal)
+            //The Insert() method inserts the string at specified index in StringBuilder.
+            //The Remove() method removes the string at specified index with specified length.
+            //The Replace() method replaces all occurrence(sabhi strings) of a specified string with a specified replacement string.
+            //ToString() method to get string(immutable) from StringBuilder.
+
+            StringBuilder sbu = new StringBuilder("Gulshan ");
+            sbu.Append("Kumar");
+            sbu.AppendLine("MCA");
+            sbu.AppendFormat("{0:X}"/*C,N*/, 25);
+            sbu.Insert(7, " C#");//StringBuilder is zero index based
+            sbu.Remove(11, 5);
+            sbu.Append("C#");
+            sbu.Replace("C#", "Kumar");
+            string str = sbu.ToString();
+            Console.WriteLine(str);
+
+            //(109, 110)( PART-1, PART-2 ) MULTI THREADING IN C#
+            //Without Multithreading Multitasking not be posible in any OS
+            //The threads created using the thread class are called the child threads of the main thread.
+            //You can access a thread using the CurrentThread property of the thread class.
+            //Thread.Sleep() cause  the currently executing thread to pause temporarily for the specified amount of time.
+            //It saves time because  multiple taks are being executed at a time.
+            //TO Create multithreaded application in C#, we need to use System.Threading namespace.
+            
+            //Multiple applications simultaneously run hone ko multi tasking khete hain, using multi threading means multiple threads. <- What is Multi tasking?
+            //Every application is executed in a process provided by operating system. Every process its unique id.
+            //Every application has a single thread by default to execute a program, this thread used by Process to execute application code(sabkuch like method, class etc), for dividing this process in multiple processes use multiple threads, for running application code simultaneously.
+            //Every application follows single threaded model. our applications is so big, it's a drawback, for overcoming from this using multi threading concept.
+            //When our application hanged on, we end process of perticular application from task manager for closing them.
+            //Thread is an light weight resource. using threads will increase the performance of our application.
+            //Single Thread works in sequential manner. In func2 complex coding takes 15sec for taking data from db. so, func3 delay execute because of func2. its a huge drawback for our application. so, use multiple threads.
+            //Threads are executed by the operating system using time-sharing(thodi-thodi der execution for every thread simultaneously), not specified time depends on OS.
+            //How many threads can be executed at a time in C#?
+            //Each core can only run 1 thread at a time, i.e.hyperthreading is disabled.So, you can have a total maximum of 20 threads executing in parallel, one thread per CPU/ core.That can mean 20 single - threaded jobs, 1 multi - threaded job with 20 threads, or anything in between.
+
+            //Thread th = Thread.CurrentThread;//Our default thread of application is CurrentThread, its a anonymous thread
+            //th.Name = "Main Thread";
+            //Console.WriteLine("Current Executing Thread is: " + Thread.CurrentThread.Name);
+            ThreadClass.func1();
+            ThreadClass.func2();
+            ThreadClass.func3();
+            
             ////(110)( PART-2 ) MULTI THREADING IN C#
             //Thread t1 = new Thread(func1);
             //Thread t2 = new Thread(func2);
@@ -2466,37 +2541,36 @@ namespace CSharp
         //    }
         //}
 
-        //(110)( PART-2 ) MULTI THREADING IN C#
-        //Without Multithreading Multitasking not be posible in any OS
-        //The threads created using the thread class are called the child threads of the main thread.
-        //You can access a thread using the CurrentThread property of the thread class.
-        //Thread.Sleep() cause  the currently executing thread to pause temporarily for the specified amount of time.
-        //It saves time because  multiple taks are being executed at a time.
-        //TO Create multithreaded application in C#, we need to use System.Threading namespace.
-        public static void func1()
+        //(109, 110)( PART-1, PART-2 ) MULTI THREADING IN C#
+        class ThreadClass
         {
-            for (int i = 0; i <= 50; i++)
+            public static void func1()
             {
-                Console.WriteLine("Func1 = " + i);
-            }
-        }
-        public static void func2()
-        {
-            for (int i = 0; i <= 50; i++)
-            {
-                Console.WriteLine("Func2 = " + i);
-                if (i == 25)
+                for (int i = 0; i <= 50; i++)
                 {
-                    Console.WriteLine("Thread is going to sleep for 8 seconds..");
-                    Thread.Sleep(8000);
+                    Console.WriteLine("Func1= " + i);
                 }
             }
-        }
-        public static void func3()
-        {
-            for (int i = 0; i <= 50; i++)
+
+            public static void func2()
             {
-                Console.WriteLine("Func3 = " + i);
+                for (int i = 0; i <= 50; i++)
+                {
+                    Console.WriteLine("Func2= " + i);
+                    if (i == 25)
+                    {
+                        Console.WriteLine("Thread is going to sleep for 8 seconds..");
+                        Thread.Sleep(8000);
+                    }
+                }
+            }
+
+            public static void func3()
+            {
+                for (int i = 0; i <= 50; i++)
+                {
+                    Console.WriteLine("Func3= " + i);
+                }
             }
         }
 
