@@ -53,8 +53,8 @@ namespace CSharp
             int k = 5;//explicit data type conversion
             float l = k;
 
-            string m = "5";//implicit conversion is done by the compiler
-            int n =/*(int), Convert.ToInt32*/int.Parse(m);//explicit conversion is done by the developer because small to high datatype conversion id done by the compiler implicitly
+            string m = "5";//implicit conversion is done by the compiler into small to high data type
+            int n =/*(int), Convert.ToInt32*/int.Parse(m);//explicit conversion is done by the developer because high to small datatype conversion is not handeled by the compiler implicitly
             Console.WriteLine(n);
 
             //(9)CONSTANT VARIABLE IN C-SHARP
