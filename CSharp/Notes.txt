@@ -1,3 +1,7 @@
+Note:- Csharp Learning by cmd :-
+- For learning c# using cmd <- Create a Folder, Create a cs ext file(any) in folder. Enter folder's search location write cmd enter, opened cmd write csc file.cs enter, write file enter <- for converted file running on cmd, csc(C-sharp compiler)
+
+
 (11)STATEMENTS, EXPRESSIONS AND OPERATORS IN C-SHARP
 Statement is set of tasks that perform to achieve the overall functionality of a program.
 - C# program contains multiple statements grouped in a blocks.
