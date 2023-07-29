@@ -568,7 +568,7 @@ namespace CSharp
             //We have two types of data types in C# Programming Language, first is value type and second one is reference type
             //Struct --Value Type --Stack Memory
             //Class --Reference Type --Heap Memory
-            //In Reference Type each object of object type has same reference variable created in stack memory for maching object in heap memory, means same object of every Object simple.
+            //In Reference Type each object of object type has same reference variable created in stack memory for maching object in heap memory, means same reference of every Object simple.
 
             Employee emp = new Employee();
             emp.Salary = 1;
