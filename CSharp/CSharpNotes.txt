@@ -75,6 +75,8 @@ Access Specifier
 
 Access Specifiers (Access Modifiers) are keywords in Object Oriented Programming, that specify accessibility of Types and Types Members. Remember the following points: By default classes are Internal. By default members of classes are Private. Access Specifier are Public, Private, Protected, Internal.
 
+The internal access specifier in C# is a keyword that specifies that a type or type member can only be accessed within the same assembly.
+
 Encapsulation 
 --------------
 
