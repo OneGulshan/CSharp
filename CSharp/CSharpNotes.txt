@@ -7,6 +7,9 @@ OOPS
 What is OOPS
 OOPS is a programming pattern that is built around objects or entities
 
+what is the meaning of oriented in OOP in C#
+In OOP oriented meaning is interested in a particular kind of thing or entity in C#
+
 Classes And Objects
 --------------------
 
