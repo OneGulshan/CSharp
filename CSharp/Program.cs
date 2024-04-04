@@ -1936,8 +1936,8 @@ namespace CSharp
             //The "is" operator is used to check if the run-time type of an object is compatible with the given type or not whereas "as" operator is used to perform conversion between compatible reference types or Nullable types.
             //The "is" operator is used for only reference, boxing, and unboxing convertions whereas "as" operator is used only for nullable, reference and boxing conversions.
             object obb = 458;//"Kumar";//Return null value here because object convertion in another object is not compatible/fails.
-            string str = obb as string;
-            Console.WriteLine(str);
+            string stri = obb as string;
+            Console.WriteLine(stri);
 
             //(130)Null Coalesce Operator In C#
             //The ?? operator is also known as the null-coalescing operator.
